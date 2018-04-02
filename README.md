@@ -1,4 +1,5 @@
-# Watson Studio: Playing with OpenCV (Open Source Computer Vision)
+# Watson Studio: Playing with OpenCV 
+  (Open Source Computer Vision)
 ## Mimmitkoodaa workshop 
 
 
@@ -10,7 +11,6 @@
 
 Login to www.bluemix.net and create the following services:
 
-    - Watson Machine Learning
     - Cloud Object Storage
     - Apache Spark
 
@@ -18,20 +18,7 @@ In order to do so, go to the Catalog find the wanted service.
 
 ![](/screenshots/Picture3.png?raw=true)
 
-**1. IBM Machine Learning** 
-
-IBM Watson Machine Learning is an IBM Cloud service that enables users to perform two fundamental operations of machine learning: training and scoring.
-    - Training is the process of refining an algorithm so that it can learn from a data set. The output of this operation is called a model. A model encompasses the learned coefficients of mathematical expressions.
-    - Scoring is the operation of predicting an outcome by using a trained model. The output of the scoring operation is another data set containing predicted values.
-Watson Machine Learning service is under the Data & Analytics category.
-
-![](/screenshots/Picture4.png?raw=true)
-
- Make sure you have the correct region and space where you want to create your service and click on create.
-
-![](/screenshots/Picture7.png?raw=true)
-
-**2. Apache Spark** 
+**1. Apache Spark** 
 
 Apache Spark is an open source cluster computing framework optimized for extremely fast and large scale data processing, which you can access via the newly integrated notebook interface IBM Analytics for Apache Spark. You can connect to your existing data sources or take advantage of the on-demand big data optimization of Object Storage. Spark plans are based on the maximum number of executors available to process your analytic jobs. Executors exist only as long as they're needed for processing, so you're charged only for processing done.
 
@@ -42,7 +29,7 @@ Make sure you have the correct region and space where you want to create your se
  
 ![](/screenshots/Picture8.png?raw=true)
 
-**3. Cloud Object Storage** 
+**2. Cloud Object Storage** 
 
 IBM Cloud Object Storage is a highly scalable cloud storage service, designed for high durability, resiliency and security. Store, manage and access your data via our self-service portal and RESTful APIs. Connect applications directly to Cloud Object Storage use other IBM Cloud Services with your data.
 
@@ -77,7 +64,7 @@ After few seconds your Watson Studio environment will be ready. Click on Done.
 
 ![](/screenshots/Picture13.png?raw=true)
 
-## Step 3: Create a project on DSX (Data Science Experience)
+## Step 3: Create a project 
 
 Click on New Project.
 
@@ -100,7 +87,7 @@ If you are missing a service click on add new service, from existing and select 
 ![](/screenshots/Picture15d.png?raw=true)
 
 
-## Step 4: Add data & the Jupyter Notebook
+## Step 4: Add data & import the Jupyter Notebook
 
 You can create a machine learning model by using the model builder, the flow editor, or a notebook to prepare data, train the model, and deploy the model. In this example we will use the model builder. 
 
