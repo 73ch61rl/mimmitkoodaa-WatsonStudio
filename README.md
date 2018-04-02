@@ -1,4 +1,4 @@
-# Building models with IBM Watson Machine Learning
+# Watson Studio: Playing with OpenCV (Open Source Computer Vision)
 ## Mimmitkoodaa workshop 
 
 
@@ -61,9 +61,9 @@ Listed you will find the needed services as shown in the image.
 
 ![](/screenshots/Picture11.png?raw=true)
 
-## Step 2: Configure Data Science Experience 
+## Step 2: Configure Watson Studio
 
-Go to https://eu-gb.datascience.ibm.com to access IBM Data Science Experience. 
+Go to https://eu-gb.datascience.ibm.com to access IBM Watson Studio. 
 
 ![](/screenshots/Picture1.png?raw=true)
 
@@ -73,7 +73,7 @@ First time you log in the service will prompt a window with you account informat
 
 ![](/screenshots/Picture12.png?raw=true)
 
-After few seconds your Data Science Experience environment will be ready. Click on Done. 
+After few seconds your Watson Studio environment will be ready. Click on Done. 
 
 ![](/screenshots/Picture13.png?raw=true)
 
@@ -100,7 +100,7 @@ If you are missing a service click on add new service, from existing and select 
 ![](/screenshots/Picture15d.png?raw=true)
 
 
-## Step 4: Build and train a model
+## Step 4: Add data & the Jupyter Notebook
 
 You can create a machine learning model by using the model builder, the flow editor, or a notebook to prepare data, train the model, and deploy the model. In this example we will use the model builder. 
 
@@ -145,7 +145,7 @@ After the training is complete save the model.
 ![](/screenshots/Picture22.png?raw=true)
 
 
-## Step 5: Deploy and test the model
+## Step 5: Access the Notebook
 
 After you create, train, and evaluate a model, you can deploy it. Although it is possible to score a model without deploying it, a model has to be deployed before it can be scored from the Watson Machine Learning APIs. Also, a model can only have a single deployment. For a trial account, a user can have only one deployed model at a time.
 
@@ -162,3 +162,7 @@ When the model deployment is complete, view the deployment by clicking on the th
 Go to the test tab and interact with the model. Change the model inputs and check the prediction. 
 
 ![](/screenshots/Picture25.png?raw=true)
+
+## Step 6: Play with Watson Studio
+
+
