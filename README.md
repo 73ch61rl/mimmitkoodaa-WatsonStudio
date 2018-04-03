@@ -76,16 +76,15 @@ Give the project a name and connect with your Spark and Object Storage instances
 
 Then click on Create and your project will be ready! 
 
-Go to the Settings tab and confirm that your project is connected to your Machine Learning, Spark and Object Storage services created in Step 1.
+Go to the Settings tab and confirm that your project is connected to your Spark and Object Storage services created in Step 1.
 
-![](/screenshots/Picture15b.png?raw=true)
+![](/screenshots/Picture15.png?raw=true)
 
-![](/screenshots/Picture15c.png?raw=true)
+![](/screenshots/Picture30.png?raw=true)
 
 If you are missing a service click on add new service, from existing and select from the list your service.
 
-![](/screenshots/Picture15d.png?raw=true)
-
+  ![](/screenshots/Picture31.png?raw=true)
 
 ## Step 4: Add data & import the Jupyter Notebook
 
