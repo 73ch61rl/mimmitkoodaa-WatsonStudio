@@ -90,65 +90,64 @@ If you are missing a service click on add new service, from existing and select 
 
 You can create a machine learning model by using the model builder, the flow editor, or a notebook to prepare data, train the model, and deploy the model. In this example we will use the model builder. 
 
-Next click on the Assets tab. 
+Next click on the Assets tab and go to the Notebooks section. Click on add new Notebook. 
 
+## IMAGE
 ![](/screenshots/Picture16.png?raw=true)
 
-Under the section Models, click on New model. 
+## IMAGE
 
 ![](/screenshots/Picture17.png?raw=true)
 
-We will build a logistic regression model that assesses the likelihood that a customer of an outdoor equipment company will buy a tent. 
-Give the model a name and a description, select Model builder and Manual.
+We will not start our Notebook from scratch, so we will import the notebook located in this repository. 
+Click on Notebook from URL and give your notebook a name. For example OpenCV playground. In the notebook URL paste:
 
-- Automatic method: you rely on automatic data preparation (ADP) completely.
+## URL 
 
-- Manual method: in addition to some functions that are handled by the ADP transformer, you can add and configure your own estimators, which are the algorithms used in the analysis. 
+And finally click on Create. 
+
+## IMAGE 
 
 ![](/screenshots/Picture18.png?raw=true)
 
-Click on Create.
 
-Let's add some data! Download the GoSales_Tx_LogisticRegression.csv file from this repository and click on Add data assets. 
+
+Let's add some data! Download the test image Image.png file from this repository and click on Add data assets. 
 
 ![](/screenshots/Picture19.png?raw=true)
 
-Browse for the csv file and open it. Once it finished loading you will see it in the data assets.
-Select it and click on Next. 
+Browse for the png file and open it. Once it finished loading you will see it in the data assets.
 
 ![](/screenshots/Picture20.png?raw=true)
 
-After you load the data you must train the data. 
-This consists of choosing the appropiate technique and estimator to apply to the raw data. 
-
-For the label colum select IS_TENT and keep the default feature columns. 
-Select Binary Classification, next add an estimator using Logistic regression and click Next. This may take few minutes. 
-
-![](/screenshots/Picture21.png?raw=true)
-
-After the training is complete save the model. 
-
-![](/screenshots/Picture22.png?raw=true)
-
+Now we have the image we are going to analyse and the notebook containing all the necessary libraries and algorithms to do so.
 
 ## Step 5: Access the Notebook
 
-After you create, train, and evaluate a model, you can deploy it. Although it is possible to score a model without deploying it, a model has to be deployed before it can be scored from the Watson Machine Learning APIs. Also, a model can only have a single deployment. For a trial account, a user can have only one deployed model at a time.
+Click on the notebook you just created to open it. 
 
-Go to the deployments tab and click on add a deployment. 
+## IMAGE
 
-![](/screenshots/Picture23.png?raw=true)
+Click on the pen icon to edit the notebook. 
 
-Give your deployment a name and click save. 
+## IMAGE
 
-![](/screenshots/Picture24.png?raw=true)
+The only part you will need to edit is the credentials part. 
 
-When the model deployment is complete, view the deployment by clicking on the three dots on under Actions and then view.
+Click on the 1001 icon and you should see your Image.png listed. Under the image you should see a menu with the following options: 
+## IMAGE
 
-Go to the test tab and interact with the model. Change the model inputs and check the prediction. 
+Click on Insert credentials and insert them in the second shell as shown in the image
 
-![](/screenshots/Picture25.png?raw=true)
+## IMAGE
 
-## Step 6: Play with Watson Studio
+Now you can run your notebook and use different techniques to analyse and modify the given image. 
+
+
+## Summary
+
+In this lab we used a basic Jupyter notebook with OpenCV to analyse an image. 
+
+
 
 
