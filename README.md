@@ -2,6 +2,7 @@
   (Open Source Computer Vision)
 ## Mimmitkoodaa workshop 
 
+![](/screenshots/PictureX.png?raw=true)
 
 #### Pre-requisites:
   - IBM Cloud Account -  www.bluemix.net
@@ -9,14 +10,36 @@
   
 ## Step 1: Set up the environment on IBM Cloud
 
-Login to www.bluemix.net and create the following services:
+Login to www.bluemix.net. If you are entering for the first time you will see something similar to the image below, your application and services dahsboard will be empty.
 
-    - Cloud Object Storage
-    - Apache Spark
+## image of bluemix dashboad
 
-In order to do so, go to the Catalog find the wanted service. 
+In this lab we will use Watson Studio, a platform where you can create and manage machine & deep learning  workflows required  to infuse AI to drive innovation. It provides a suite of tools for data scientists, application developers and subject matter  experts to collaboratively and  easily work with data and use that data to build, train and deploy  models  at scale.
 
-![](/screenshots/Picture3.png?raw=true)
+Let's go to the catalog by clicking on the button on the right top corder and find Watson Studio, which it is located under the Watson category.
+
+## image catalog watson studio
+
+Click on the icon and give your service a name. 
+Make sure you have the correct region and space where you want to create your service and click on create.
+
+## IMAGE of service creation view 
+
+Now, let's enter Watson Studio. Click on the Get Started button. 
+
+## IMAGE of get started with Watson Studio
+
+This will open a new tab. 
+
+## image of watson studio first page
+
+Now we are going to create a new project. Click on the new project icon. 
+## IMAGE new project icon
+
+Give your project a name and a description. 
+
+
+
 
 **1. Apache Spark** 
 
@@ -88,7 +111,7 @@ If you are missing a service click on add new service, from existing and select 
 
 ## Step 4: Add data & import the Jupyter Notebook
 
-You can create a machine learning model by using the model builder, the flow editor, or a notebook to prepare data, train the model, and deploy the model. In this example we will use the model builder. 
+In Watson Studio you can create a machine learning model by using the model builder, the flow editor, or a notebook to prepare data, train the model, and deploy the model. In this example we will use a Jupyter Notebook.
 
 Next click on the Assets tab and go to the Notebooks section. Click on add new Notebook. 
 
@@ -102,25 +125,12 @@ Next click on the Assets tab and go to the Notebooks section. Click on add new N
 We will not start our Notebook from scratch, so we will import the notebook located in this repository. 
 Click on Notebook from URL and give your notebook a name. For example OpenCV playground. In the notebook URL paste:
 
-## URL 
+     https://github.com/sandra-calvo/mimmitkoodaa-datascience/blob/master/Use%20deep%20learning%20for%20image%20classification.ipynb
 
 And finally click on Create. 
 
 ## IMAGE 
 
-![](/screenshots/Picture18.png?raw=true)
-
-
-
-Let's add some data! Download the test image Image.png file from this repository and click on Add data assets. 
-
-![](/screenshots/Picture19.png?raw=true)
-
-Browse for the png file and open it. Once it finished loading you will see it in the data assets.
-
-![](/screenshots/Picture20.png?raw=true)
-
-Now we have the image we are going to analyse and the notebook containing all the necessary libraries and algorithms to do so.
 
 ## Step 5: Access the Notebook
 
@@ -143,10 +153,14 @@ Click on Insert credentials and insert them in the second shell as shown in the 
 
 Now you can run your notebook and use different techniques to analyse and modify the given image. 
 
+## Step 6: Run the Notebook
+
+In order to run the notebook you can click on the Run icon and go thought the notebook cell by cell, or you can click on the Cell menu and click on Run All. 
+
 
 ## Summary
 
-In this lab we used a basic Jupyter notebook with OpenCV to analyse an image. 
+In this lab we used a python Jupyter notebook to use analyse images with hand written numbers using deep learning. 
 
 
 
