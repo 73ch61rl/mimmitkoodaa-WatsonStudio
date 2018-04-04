@@ -105,47 +105,39 @@ As the running engine for our notebook we will use the Spark service we added in
 ![](/screenshots/Picture18.png?raw=true)
 
 
-## Step 3: Explore and run the Notebook
+## Step 3: Explore the Notebook
 
-This notebook is divided in four parts: 
+This notebook is divided in three parts: 
 - Load libraries
- - Access data
+- Access data
 - Train the pattern recognition model
-- Summary
 
 First we will install the necessary libraries in our project. For deep learning we will use **nolearn** library. nolearn is a Python package with utility functions for machine learning tasks.
 
 The we will need data to train our model. MNIST (http://yann.lecun.com/exdb/mnist/) is a database of handwritten numbers. Because it uses real-world data, it is an ideal database for training neural networks and machine learning tools that use pattern recognition.
-We will split the data into two data sets, one for training and one for testing. That way we can always test our model with new images the model has never seen before. Usually we can split the data set 60%-40%. Even 
+We will split the data into two data sets, one for training and one for testing. That way we can always test our model with new images the model has never seen before. In this case we will take 1/3 for testing and 2/3 for training. 
 
+Now we are ready to train our model. The notebook shows you how to train a pattern recognition model for handwritten numbers by using the Deep Belief Network (DBN) solver. The DBN solver is trained on approximately 47,000 images each with 784 pixels (28 by 28 before vectorizing) and uses 300 hidden units to support more efficient learning rates. The ten output units correspond to each of the single digit numbers (0 - 9). The results of the learning algorithms have an accuracy of 98 percent.
+
+Let's run the notebook and see the results!
+
+
+## Step 5: Run the notebook
 
 In order to run the notebook you can click on the Run icon and go thought the notebook cell by cell, or you can click on the Cell menu and click on Run All. 
 
+![](/screenshots/Picture19.png?raw=true)
 
+Note that the training part will take few minutes to run. 
 
-
-
-
-## Step 5: Access the Notebook
-
-Click on the notebook you just created to open it. 
-
-## IMAGE
-
-Click on the pen icon to edit the notebook. 
-
-## IMAGE
-
-The only part you will need to edit is the credentials part. 
-
-Click on the 1001 icon and you should see your Image.png listed. Under the image you should see a menu with the following options: 
-## IMAGE
-
-Click on Insert credentials and insert them in the second shell as shown in the image
-
-## IMAGE
-
-Now you can run your notebook and use different techniques to analyse and modify the given image. 
+Once you have run the whole notebook you can go to the end and run again the cells with the code:
+        randIm()
+        
+        
+![](/screenshots/Picture20.png?raw=true)
+ 
+This will run a random image through our model and give us the prediction. 
+As you will see the model is not perfect, it needs more training to increase accuracy. 
 
 
 ## Summary
