@@ -14,7 +14,7 @@ Login to www.bluemix.net. If you are entering for the first time you will see so
 
 ![](/screenshots/Picture1.png?raw=true)
 
-In this lab we will use Watson Studio, a platform where you can create and manage machine & deep learning  workflows required  to infuse AI to drive innovation. It provides a suite of tools for data scientists, application developers and subject matter  experts to collaboratively and  easily work with data and use that data to build, train and deploy  models  at scale.
+In this lab we will use **Watson Studio**, a platform where you can create and manage machine & deep learning  workflows required  to infuse AI to drive innovation. It provides a suite of tools for data scientists, application developers and subject matter  experts to collaboratively and  easily work with data and use that data to build, train and deploy  models  at scale.
 
 ![](/screenshots/Picture0.png?raw=true)
 
@@ -45,7 +45,7 @@ Give your project a name and a description.
 
 Now, on le right side you will see that Object Storage is needed. Click on Add - this will open another tab.
 
-    IBM Cloud Object Storage is a highly scalable cloud storage service, designed for high durability, resiliency and security. Store, manage and access your data via our self-service portal and RESTful APIs. Connect applications directly to Cloud Object Storage use other IBM Cloud Services with your data.
+**IBM Cloud Object Storage** is a highly scalable cloud storage service, designed for high durability, resiliency and security. Store, manage and access your data via our self-service portal and RESTful APIs. Connect applications directly to Cloud Object Storage use other IBM Cloud Services with your data.
 
 Select the New tab and Lite Plan for your object storage service, then click on create. 
 
@@ -57,82 +57,73 @@ Confirm the creation of the service.
 
 ![](/screenshots/Picture10.png?raw=true)
 
-If you don't see your service added to your project click on Refresh and then it should appear. 
+If you don't see your service added to your project click on Refresh and then it should appear. Now click on create. 
 
 ![](/screenshots/Picture11.png?raw=true)
 
-Now click on create. 
+As you can see the project includes many options, assets, collaborators, deployments... feel free to explore the options before you continue with the lab. 
 
 ![](/screenshots/Picture12.png?raw=true)
 
-
-
-**1. Apache Spark** 
-
-Apache Spark is an open source cluster computing framework optimized for extremely fast and large scale data processing, which you can access via the newly integrated notebook interface IBM Analytics for Apache Spark. You can connect to your existing data sources or take advantage of the on-demand big data optimization of Object Storage. Spark plans are based on the maximum number of executors available to process your analytic jobs. Executors exist only as long as they're needed for processing, so you're charged only for processing done.
-
- 
-
-
-## Step 2: Configure Watson Studio
-
-Go to https://eu-gb.datascience.ibm.com to access IBM Watson Studio. 
-
-![](/screenshots/Picture1.png?raw=true)
-
-Sign in using your IBM Cloud credentials. 
-
-First time you log in the service will prompt a window with you account information. Confirm your information by clicking on Continue.
-
-![](/screenshots/Picture12.png?raw=true)
-
-After few seconds your Watson Studio environment will be ready. Click on Done. 
+Now let's add some computing power to run our algorithims. Let's go to the Settings tab. 
 
 ![](/screenshots/Picture13.png?raw=true)
 
-## Step 3: Create a project 
-
-Click on New Project.
+Go down to Associated Services, which should be empty. Let's click on the Add a service button and Spark option. This will open a new tab. 
 
 ![](/screenshots/Picture14.png?raw=true)
 
-Give the project a name and connect with your Spark and Object Storage instances. You should see the services you created in Step 1. 
+**Apache Spark** is an open source cluster computing framework optimized for extremely fast and large scale data processing, which you can access via the newly integrated notebook interface IBM Analytics for Apache Spark. You can connect to your existing data sources or take advantage of the on-demand big data optimization of Object Storage. Spark plans are based on the maximum number of executors available to process your analytic jobs. Executors exist only as long as they're needed for processing, so you're charged only for processing done.
+
+Select from the New tab the Lite plan for Spark and click on Create. 
 
 ![](/screenshots/Picture15.png?raw=true)
 
-Then click on Create and your project will be ready! 
+Confirm the creation of the service. 
 
-Go to the Settings tab and confirm that your project is connected to your Spark and Object Storage services created in Step 1.
-
-![](/screenshots/Picture15.png?raw=true)
-
-![](/screenshots/Picture30.png?raw=true)
-
-If you are missing a service click on add new service, from existing and select from the list your service.
-
-  ![](/screenshots/Picture31.png?raw=true)
-
-## Step 4: Add data & import the Jupyter Notebook
-
-In Watson Studio you can create a machine learning model by using the model builder, the flow editor, or a notebook to prepare data, train the model, and deploy the model. In this example we will use a Jupyter Notebook.
-
-Next click on the Assets tab and go to the Notebooks section. Click on add new Notebook. 
-
-## IMAGE
 ![](/screenshots/Picture16.png?raw=true)
 
-## IMAGE
+ Finally, your environment is ready! :+1:
+
+
+## Step 2: Add a notebook
+
+Click on the Add to project icon and select Notebook.
 
 ![](/screenshots/Picture17.png?raw=true)
 
-We will not start our Notebook from scratch, so we will import the notebook located in this repository. 
-Click on Notebook from URL and give your notebook a name. For example OpenCV playground. In the notebook URL paste:
+We will not start our Notebook from scratch, so we will import the notebook located in this repository. Select From URL tab and give your notebook a name.
+
+![](/screenshots/Picture17a.png?raw=true)
+
+In the notebook URL paste the following URL:
 
      https://github.com/sandra-calvo/mimmitkoodaa-datascience/blob/master/Use%20deep%20learning%20for%20image%20classification.ipynb
 
-And finally click on Create. 
+As the running engine for our notebook we will use the Spark service we added in the previous step, so select your spark instance from the list. Then click on Create notebook. 
 
-## IMAGE 
+![](/screenshots/Picture18.png?raw=true)
+
+
+## Step 3: Explore and run the Notebook
+
+This notebook is divided in four parts: 
+- Load libraries
+ - Access data
+- Train the pattern recognition model
+- Summary
+
+First we will install the necessary libraries in our project. For deep learning we will use **nolearn** library. nolearn is a Python package with utility functions for machine learning tasks.
+
+The we will need data to train our model. MNIST (http://yann.lecun.com/exdb/mnist/) is a database of handwritten numbers. Because it uses real-world data, it is an ideal database for training neural networks and machine learning tools that use pattern recognition.
+We will split the data into two data sets, one for training and one for testing. That way we can always test our model with new images the model has never seen before. Usually we can split the data set 60%-40%. Even 
+
+
+In order to run the notebook you can click on the Run icon and go thought the notebook cell by cell, or you can click on the Cell menu and click on Run All. 
+
+
+
+
 
 
 ## Step 5: Access the Notebook
@@ -155,10 +146,6 @@ Click on Insert credentials and insert them in the second shell as shown in the 
 ## IMAGE
 
 Now you can run your notebook and use different techniques to analyse and modify the given image. 
-
-## Step 6: Run the Notebook
-
-In order to run the notebook you can click on the Run icon and go thought the notebook cell by cell, or you can click on the Cell menu and click on Run All. 
 
 
 ## Summary
