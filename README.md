@@ -122,7 +122,7 @@ Now we are ready to train our model. The notebook shows you how to train a patte
 Let's run the notebook and see the results!
 
 
-## Step 5: Run the notebook
+## Step 4: Run the notebook
 
 In order to run the notebook you can click on the Run icon and go thought the notebook cell by cell, or you can click on the Cell menu and click on Run All. 
 
